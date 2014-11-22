@@ -39,3 +39,24 @@ trainGroup <- getCleanTable("train");
 ## This is step 1 of assignment: Merges the training and the test sets to create one data set.
 combinedGroup <- rbind(testGroup,trainGroup)
 
+## This is step 5 of assignment: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+getMeany <- function(combinedGroup) {
+	sortedMeans <- data.frame();
+	rowNumbers <- ncol(combinedGroup);
+	
+	for(subject in unique(combinedGroup$Subject)) {
+		values <- data.frame()
+		for(activity2 in unique(combinedGroup$activity)) {
+			values <- rbind(colMeans(subset(combinedGroup, Subject == subject & activity == activity2)[,3:rowNumbers]))
+			values <- cbind(activity2, values)
+		}
+		values <- cbind(subject, values);
+		sortedMeans <- rbind(sortedMeans, values);
+	}
+
+	colnames(sortedMeans) <- names(combinedGroup);
+	final <- final[order(subject, activity)];
+	sortedMeans;
+}
+
+tidySubjectActivity <- getMeany(combinedGroup);
