@@ -19,9 +19,9 @@ The final result is a document with 79 measurements.
 The first two columns are the subject's ID (number) and the activity performed.
 The 79 remaining columns are named using shorthand:
 
-* t or f: time domain or frequency (Fast Fourier Transform of t) measurement
-* Body or Gravity: the type of signal for acceleration 
-* Acc or Gyro: indicating the measuring agent, accelerometer or gyroscope
-* (optional) Jerk or Mag: body linear acceleration and angular velocity in time (Jerk); MAGnitude of 3D signals in Euclidean norm 
-* mean or std: indicating if the measurement is the mean or std
-* (optional) X,Y, or Z: Indicating axis; if absent, overall
+* **t** or **f**: time domain or frequency (Fast Fourier Transform of t) measurement
+* **Body** or **Gravity**: the type of signal for acceleration 
+* **Acc** or **Gyro**: indicating the measuring agent, accelerometer or gyroscope
+* (optional) **Jerk** or **Mag**: body linear acceleration and angular velocity in time (Jerk); MAGnitude of 3D signals in Euclidean norm 
+* **mean** or **std**: indicating if the measurement is the mean or std
+* (optional) **X**,**Y**, or **Z**: Indicating axis; if absent, overall
