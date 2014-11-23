@@ -22,6 +22,6 @@ The 79 remaining columns are named using shorthand:
 * t or f: time or frequency measurement
 * Body
 * Acc or Gyro: indicating the measuring agent, accelerometer or gyroscope
-* (optional) Mag or Jerk
+* (optional) Mag or Jerk: *could not find; possibly movement type*
 * mean or std: indicating if the measurement is the mean or std
 * (optional) X,Y, or Z: Indicating axis; if absent, overall
