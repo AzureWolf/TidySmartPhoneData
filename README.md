@@ -1,4 +1,4 @@
-# Coursera Getting and Cleaning Data
+# Coursera Getting and Cleaning Data Project
 
 ## About this repo
 
@@ -21,6 +21,8 @@ I will not highlight the functions here, as the file itself is documented with c
 ## About the CodeBook.md
 
 The CodeBook file in this repo provides insights into what information is represented in the tidySubjectActivity.txt file.
-The final output, tidySubjectActivity.txt, contains 180 rows: 30 subjects performing 6 different actions.
-THe data collected from those actions are the remaining columns.
+The final output, tidySubjectActivity.txt, contains 180 rows:
+* 30 subjects performing 6 different actions.
+
+The data collected from those actions are the remaining columns.
 The CodeBook will go into greater detail.
