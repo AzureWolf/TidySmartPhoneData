@@ -13,15 +13,15 @@ The final document, tidySubjectActivity.txt, has done the following to the UCI H
 * Collated only the mean and standard deviation of the measurements, leaving all other values out
 * Taken the mean of each subject's trials for each activity
 	* Effectively, this means we have taken the "mean of the mean" for each measurement, as well as the "mean of the std"
-	* Example: Subject 1's WALKING trials' measurements have been averaged into a single row
+	* *Example: Subject 1's WALKING trials' measurements have been averaged into a single row*
 
 The final result is a document with 79 measurements.
 The first two columns are the subject's ID (number) and the activity performed.
 The 79 remaining columns are named using shorthand:
 
-* t or f: time or frequency measurement
-* Body
+* t or f: time domain or frequency (Fast Fourier Transform of t) measurement
+* Body or Gravity: the type of signal for acceleration 
 * Acc or Gyro: indicating the measuring agent, accelerometer or gyroscope
-* (optional) Mag or Jerk: *could not find; possibly movement type*
+* (optional) Jerk or Mag: body linear acceleration and angular velocity in time (Jerk); MAGnitude of 3D signals in Euclidean norm 
 * mean or std: indicating if the measurement is the mean or std
 * (optional) X,Y, or Z: Indicating axis; if absent, overall
